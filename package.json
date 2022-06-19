@@ -4,7 +4,9 @@
   "description": "convert java properties files to json",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "lint": "eslint src/*.ts",
+    "lint:fix": "eslint src/*.ts --fix"
   },
   "keywords": [
     "properties",
@@ -12,5 +14,12 @@
     "nodejs"
   ],
   "author": "@whilethiscompiles",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.28.0",
+    "@typescript-eslint/parser": "^5.28.0",
+    "eslint": "^8.18.0",
+    "typescript": "^4.7.4"
+  }
 }
