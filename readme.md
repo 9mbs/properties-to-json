@@ -2,5 +2,5 @@
 
 
 ```shell
-node index <input_file.properties> 
+node dist/index <input_file.properties> 
 ```
